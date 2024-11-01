@@ -1,0 +1,67 @@
+.end-card {
+    padding: 5rem 0;
+    background-image: linear-gradient(to bottom right, #fce7f3, #ddd6fe, #bfdbfe);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .message {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .animated-hearts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .animated-heart {
+    font-size: 2.25rem;
+    color: #ef4444;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .signature {
+    font-size: 1.125rem;
+    color: #4b5563;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .floating-hearts {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  
+  .heart-icon {
+    color: #fbcfe8;
+    opacity: 0.5;
+  }

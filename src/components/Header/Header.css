@@ -1,0 +1,143 @@
+.header {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .content {
+    text-align: center;
+    z-index: 10;
+    padding: 2rem;
+  }
+  
+  .hearts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .heart {
+    width: 200px;
+    height: 200px;
+    background-color: #ff69b4;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .heart:before {
+    top: -100px;
+    left: 0;
+  }
+  
+  .heart:after {
+    top: 0;
+    left: 100px;
+  }
+  
+  .heart-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-heart {
+    margin-right: -30px;
+  }
+  
+  .right-heart {
+    margin-left: -30px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #ff1493;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    color: #ff69b4;
+    margin-bottom: 2rem;
+  }
+  
+  .date {
+    display: inline-block;
+    background-color: rgba(255, 105, 180, 0.2);
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ff1493;
+  }
+  
+  @media (max-width: 640px) {
+    .heart {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .heart:before,
+    .heart:after {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .heart:before {
+      top: -75px;
+    }
+  
+    .heart:after {
+      left: 75px;
+    }
+  
+    .name {
+      font-size: 1.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .date {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+    .floating-hearts {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+  }

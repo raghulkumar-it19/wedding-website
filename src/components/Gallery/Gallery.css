@@ -1,0 +1,104 @@
+.gallery {
+    padding: 5rem 0;
+    background-image: linear-gradient(to bottom right, #fce7f3, #ddd6fe, #bfdbfe);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .image-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .image-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .couple-names {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ec4899;
+    margin-bottom: 0.5rem;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .image-caption {
+    font-size: 1.125rem;
+    color: #8b5cf6;
+  }
+  
+  .description {
+    margin-top: 2.5rem;
+    text-align: center;
+    color: #4b5563;
+    font-size: 1.125rem;
+  }
+  
+  .floating-hearts {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  
+  .heart-icon {
+    color: #fbcfe8;
+    opacity: 0.5;
+  }

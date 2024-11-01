@@ -1,0 +1,42 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom right, #fce7f3, #ddd6fe, #bfdbfe);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    z-index: 50;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-item {
+    color: #4b5563;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .nav-item:hover {
+    color: #1f2937;
+  }
